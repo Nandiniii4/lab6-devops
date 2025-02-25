@@ -19,12 +19,12 @@ pipeline {
             }
         }
 
-        stage ('Deployment Stage') {
-            steps {
-                withMaven(maven: 'M2_HOME') {
-                    bat 'mvn deploy'
-                }
-            }
-        }
+        //stage ('Deployment Stage') {
+        //   steps {
+        //      withMaven(maven: 'M2_HOME') {
+        //           bat 'mvn deploy'
+        //       }
+        //   }
+        //}
     }
 }
